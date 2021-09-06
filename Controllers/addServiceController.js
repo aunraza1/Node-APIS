@@ -85,15 +85,8 @@ const addCar=async(req,res)=>{
       else{
           res.send("Tour Not Registered!")
       }
-
-
-        
-
     }
     
-
-
-
 
 
 module.exports={

@@ -4,8 +4,9 @@ const hotelBookingSchema= require('./hotelBookingSchema')
 
 const bookingSchema =mongoose.Schema({
     type:{type:String},
-    carBookingSchema: {type:carBookingSchema},
-    hotelBookingSchema:hotelBookingSchema,
+    obj: {type:hotelBookingSchema} || {type:carBookingSchema},
+    
+ 
 })
 
 const BookingModel= mongoose.model('bookingSchema',bookingSchema)
