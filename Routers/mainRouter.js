@@ -1,0 +1,7 @@
+const express= require('express')
+const router = express.Router()
+
+router.use('/auth',require('./authRouter'))
+router.use('/services',require('./servicesRouter'))
+router.use('/services',require('./bookRouter'))
+module.exports=router
